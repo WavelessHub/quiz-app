@@ -42,7 +42,7 @@ const QuizCard: NextPage<Props> = ({ id, question, options }) => {
 
   useEffect(() => {
     if (currentIndex === 0 && answers.length === 0) removeAnswers();
-  }, [currentIndex, answers, removeAnswers]);
+  }, []);
 
   return (
     <Card className="border-none overflow-hidden sm:w-full">

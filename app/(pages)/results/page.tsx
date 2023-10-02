@@ -21,7 +21,7 @@ const Page: NextPage<Props> = ({}) => {
     setIsMounted(true);
 
     if (answers.length === 0) router.replace("/");
-  }, [answers, router]);
+  }, []);
 
   if (!isMounted) return null;
   if (!answers.length) return null;
