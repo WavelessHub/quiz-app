@@ -1,11 +1,12 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { Badge } from "./ui/badge";
+
 import AnswerStatus from "./common/AnswerStatus";
 
 export type Results = {
   question_id: string;
+  question: string;
   user_answer: string;
   correct_answer: string;
 };
@@ -14,6 +15,7 @@ export const columns: ColumnDef<Results>[] = [
   {
     accessorKey: "question",
     header: "Question",
+    cell: ({ row }) => <div className="w-[80%]">{row.original.question}</div>,
   },
   {
     accessorKey: "correct_answer",

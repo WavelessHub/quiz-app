@@ -13,7 +13,7 @@ type Props = {};
 
 const StartQuizCard: NextPage<Props> = ({}) => {
   return (
-    <Card className="w-[600px] bg-slate-100 m-4">
+    <Card className="w-[600px] bg-white m-4">
       <CardHeader className="flex flex-col items-center mb-4 justify-center">
         <CardTitle className="text-3xl font-semibold">Quiz Game</CardTitle>
 

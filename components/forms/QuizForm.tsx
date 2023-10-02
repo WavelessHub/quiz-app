@@ -171,7 +171,7 @@ export function QuizForm() {
             control={control}
             name="category"
             render={({ field }) => (
-              <FormItem className="flex flex-col">
+              <FormItem className="flex flex-col w-full">
                 <FormLabel>Categories</FormLabel>
 
                 <Popover>
